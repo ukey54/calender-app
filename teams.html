@@ -31,10 +31,10 @@
             src="./images/users/user-login.svg"
             alt="default user image"
           />
-          <a class="nav-a" href="#">Hello uhemant1@gmail.com</a>
+          <a class="nav-a" href="/">Hello uhemant1@gmail.com</a>
         </li>
         <li class="nav-li nav-li-right">
-          <a class="nav-a" href="index.html">Logout</a>
+          <a class="nav-a" href="/">Logout</a>
         </li>
       </ul>
     </nav>
@@ -160,10 +160,51 @@
             </div>
           </div>
           <div class="card-col">
-            <div class="card-add-col">+</div>
+            <div class="card-add-col" onclick="openForm()">+</div>
           </div>
         </div>
       </div>
     </main>
+    <div class="form-popup" id="login-form">
+      <form action="/" method="GET" class="form-container">
+        <h1>Add Team</h1>
+
+        <label for="Team"><strong>Team</strong></label>
+        <input class="login-input" type="text" placeholder="Enter Team Title" name="Team" required>
+    
+
+        <label for="Team Tag"><strong>Team Tag</strong></label>
+        <input class="login-input" type="text" placeholder="Enter Team Tag e.g. @a-team" name="Team Tag" required>
+    
+        <label for="Team Description"><strong>Team Description</strong></label>
+        <textarea
+                rows="5"
+                cols="20"
+                name="Team Description"
+                class="login-input"
+                placeholder="Enter Team Description..."
+              ></textarea>
+        <div>
+          <select class="card-dropdown" name="card-dropdown">
+            <option value=" " selected>Select Member</option>
+            <option value="joe@example.com">joe@example.com</option>
+            <option value="mark@example.com">mark@example.com</option>
+          </select>
+          <button class="card-add-member">Add</button>
+        </div>
+
+        <button type="submit" class="login-button">Add</button>
+        <button type="submit" class="login-cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("login-form").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("login-form").style.display = "none";
+      }
+      </script>
   </body>
 </html>
