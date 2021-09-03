@@ -93,7 +93,6 @@
   box-sizing: border-box;
 }
 
-/* The popup form - hidden by default */
 .form-popup {
   display: none;
   position: fixed;
@@ -110,7 +109,7 @@
     right: 30%;    
   }
 }
-/* Add styles to the form container */
+
 .form-container {
   max-width:max-content;
   padding: 10px 10px;
