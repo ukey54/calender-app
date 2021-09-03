@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meetings</title>
+    <link rel="stylesheet" href="external/normalize.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/pages/index.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li class="nav-li nav-li-left">
+          <a class="nav-a nav-a-active" href="/">Calender</a>
+        </li>
+        <li class="nav-li nav-li-left">
+          <a class="nav-a" href="meetings.html">Meetings</a>
+        </li>
+        <li class="nav-li nav-li-left">
+          <a class="nav-a" href="teams.html">Teams</a>
+        </li>
+      </ul>
+      <ul class="nav-ul page-login">
+        <li class="nav-li nav-li-right">
+          <img
+            class="user-login-img"
+            src="./images/users/user-login.svg"
+            alt="default user image"
+          />
+          <a class="nav-a" href="/">Hello uhemant1@gmail.com</a>
+        </li>
+        <li class="nav-li nav-li-right">
+          <a class="nav-a" href="/">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <h1>
+        <img
+          class="h1-img h1-bg"
+          src="images/calender.jpg"
+          alt="Calender Image"
+        />
+        CALENDER
+      </h1>
+      <div class="second-section">
+        <h2>3 September 2021</h2>
+        <input type="date" name="calender" id="date" />
+      </div>
+      <div class="calendar">
+        <!-- Markup for 24 hours in the calendar and meetings (start with one meeting, say 7:30 - 8:30) -->
+        <div class="calendar-hours">
+          <span class="calendar-day">Friday</span>
+          <div class="calendar-hour calendar-hour-night">1:00 AM</div>
+          <div class="calendar-hour calendar-hour-night">2:00 AM</div>
+          <div class="calendar-hour calendar-hour-night">3:00 AM</div>
+          <div class="calendar-hour calendar-hour-night">4:00 AM</div>
+
+          <div class="calendar-hour calendar-hour-night">5:00 AM</div>
+          <div class="calendar-hour">6:00 AM</div>
+          <div class="calendar-hour">7:00 AM</div>
+          <div class="calendar-hour">8:00 AM</div>
+
+          <div class="calendar-hour">9:00 AM</div>
+          <div class="calendar-hour">10:00 AM</div>
+          <div class="calendar-hour">11:00 AM</div>
+          <div class="calendar-hour">12:00 AM</div>
+
+          <div class="calendar-hour">1:00 PM</div>
+          <div class="calendar-hour">2:00 PM</div>
+          <div class="calendar-hour">3:00 PM</div>
+          <div class="calendar-hour">4:00 PM</div>
+
+          <div class="calendar-hour">5:00 PM</div>
+          <div class="calendar-hour">6:00 PM</div>
+          <div class="calendar-hour">7:00 PM</div>
+          <div class="calendar-hour">8:00 PM</div>
+
+          <div class="calendar-hour calendar-hour-night">9:00 PM</div>
+          <div class="calendar-hour calendar-hour-night">10:00 PM</div>
+          <div class="calendar-hour calendar-hour-night">11:00 PM</div>
+          <div class="calendar-hour calendar-hour-night">12:00 PM</div>
+        </div>
+
+        <div class="calendar-meetings">
+          <div class="calendar-meeting">
+            <div class="calendar-col calendar-col1">10:30 AM - 11:30 AM</div>
+            <div class="calendar-col calendar-col2 calendar-meeting-goal">UI Discussion</div>
+            <div class="calendar-col calendar-col2">
+              <span style="display: block;">Attendees :</span>
+              <div class="calendar-meeting-team-user">
+                <img
+                  class="user-login-img"
+                  src="./images/users/user-login.svg"
+                  alt="default user image"
+                />
+                John
+              </div>
+              <div class="calendar-meeting-team-user">
+                <img
+                  class="user-login-img"
+                  src="./images/users/user-login.svg"
+                  alt="default user image"
+                />
+                Jane
+              </div>
+              <div class="calendar-meeting-team-user">
+                <img
+                  class="user-login-img"
+                  src="./images/users/user-login.svg"
+                  alt="default user image"
+                />
+                Joe
+              </div>
+              <div class="calendar-meeting-team-user">
+                <img
+                  class="user-login-img"
+                  src="./images/users/user-login.svg"
+                  alt="default user image"
+                />
+                Mark
+              </div>
+            </div>
+            <div class="calendar-col calendar-col2">
+              <span style="display: block;">Link :</span>
+              <a href="http://www.zoom.com">Zoom</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meet</title>
+    <link rel="stylesheet" href="external/normalize.css" />
+    <link rel="stylesheet" href="css/utils.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/pages/meetings.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="nav-ul">
+        <li class="nav-li nav-li-left">
+          <a class="nav-a" href="/">Calender</a>
+        </li>
+        <li class="nav-li nav-li-left">
+          <a class="nav-a nav-a-active" href="meetings.html">Meetings</a>
+        </li>
+        <li class="nav-li nav-li-left">
+          <a class="nav-a" href="teams.html">Teams</a>
+        </li>
+      </ul>
+      <ul class="nav-ul page-login">
+        <li class="nav-li nav-li-right">
+          <img
+            class="user-login-img"
+            src="./images/users/user-login.svg"
+            alt="default user image"
+          />
+          <a class="nav-a" href="/">Hello uhemant1@gmail.com</a>
+        </li>
+        <li class="nav-li nav-li-right">
+          <a class="nav-a" href="/">Logout</a>
+        </li>
+      </ul>
+    </nav>
+    <main class="container">
+      <h1>
+        <img class="h1-img" src="images/meeting.jpg" alt="Meeting Image" />
+        MEETINGS
+      </h1>
+      <div>
+        <ul class="meetings-ul">
+          <li class="meetings-li active">
+            <a class="a" href="meetings.html">Filter / Search meetings</a>
+          </li>
+          <li class="meetings-li">
+            <a class="a" href="add.html"> Add a meeting</a>
+          </li>
+        </ul>
+        <div>
+          <div class="search-section">
+            <form action="#" method="get">
+              <h3 class="search-section-title">Search For Meetings</h3>
+              <label for="calender">Date</label>
+              <input type="date" name="calender" id="calender" />
+              <label for="search-for">Search For</label>
+              <textarea
+                rows="5"
+                cols="60"
+                name="search-for"
+                class="search-for"
+                placeholder="Search using words which describe the meeting..."
+              ></textarea>
+              <input type="submit" value="Search" id="submit" />
+            </form>
+          </div>
+          <div class="result-section">
+            <h3 class="result-section-title">
+              Meetings Matching Search Criteria
+            </h3>
+            <div class="card-row">
+              <div class="card-col">
+                <div class="card-first-section">
+                  <h4 class="card-team-name">
+                    12 September 2021
+                    <span style="font-size: small">06:00 - 07:00</span>
+                  </h4>
+                  <span class="card-team-sort-name">Project Kickoff</span>
+                  <button>Excuse Yourself</button>
+                </div>
+                <div class="card-second-section">
+                  <div>
+                    <span>Members :</span>
+                    <div>
+                      <img
+                        class="user-login-img"
+                        src="./images/users/user-login.svg"
+                        alt="default user image"
+                      />john@example.com,
+                    </div>
+                    <div>
+                      <img
+                        class="user-login-img"
+                        src="./images/users/user-login.svg"
+                        alt="default user image"
+                      />&NonBreakingSpace;jane@example.com
+                    </div>
+                  </div>
+                  <div>
+                    <select class="card-dropdown" name="card-dropdown">
+                      <option value=" " selected>Select Member</option>
+                      <option value="joe@example.com">joe@example.com</option>
+                      <option value="mark@example.com">mark@example.com</option>
+                    </select>
+                    <button class="card-add-member">Add</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card-col">
+                <div class="card-first-section">
+                  <h4 class="card-team-name">
+                    12 September 2021
+                    <span style="font-size: small">08:00 - 09:30</span>
+                  </h4>
+                  <span class="card-team-sort-name">AWS Architecture</span>
+                  <button>Excuse Yourself</button>
+                </div>
+                <div class="card-second-section">
+                  <div>
+                    <span>Members :</span>
+                    <div>
+                      <img
+                        class="user-login-img"
+                        src="./images/users/user-login.svg"
+                        alt="default user image"
+                      />john@example.com,
+                    </div>
+                    <div>
+                      <img
+                        class="user-login-img"
+                        src="./images/users/user-login.svg"
+                        alt="default user image"
+                      />&NonBreakingSpace;jane@example.com
+                    </div>
+                  </div>
+                  <div>
+                    <select class="card-dropdown" name="card-dropdown">
+                      <option value=" " selected>Select Member</option>
+                      <option value="joe@example.com">joe@example.com</option>
+                      <option value="mark@example.com">mark@example.com</option>
+                    </select>
+                    <button class="card-add-member">Add</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
