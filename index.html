@@ -15,7 +15,7 @@
     <nav class="nav">
       <ul class="nav-ul">
         <li class="nav-li nav-li-left">
-          <a class="nav-a nav-a-active" href="index.html">Calender</a>
+          <a class="nav-a nav-a-active" href="/">Calender</a>
         </li>
         <li class="nav-li nav-li-left">
           <a class="nav-a" href="meetings.html">Meetings</a>
@@ -34,7 +34,7 @@
           <a class="nav-a" href="/">Hello uhemant1@gmail.com</a>
         </li>
         <li class="nav-li nav-li-right">
-          <a class="nav-a" href="/">Logout</a>
+          <a class="nav-a" href="#" onclick="openForm()">Logout</a>
         </li>
       </ul>
     </nav>
@@ -133,5 +133,28 @@
         </div>
       </div>
     </main>
+    <div class="form-popup" id="login-form">
+      <form action="/" method="GET" class="form-container">
+        <h1>Login</h1>
+
+        <label for="email"><strong>Email</strong></label>
+        <input class="login-input" type="text" placeholder="Enter Email" name="email" required>
+    
+        <label for="password"><strong>Password</strong></label>
+        <input class="login-input" type="password" placeholder="Enter Password" name="password" required>
+    
+        <button type="submit" class="login-button">Login</button>
+        <button type="submit" class="login-cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+    <script>
+      function openForm() {
+        document.getElementById("login-form").style.display = "block";
+      }
+      
+      function closeForm() {
+        document.getElementById("login-form").style.display = "none";
+      }
+      </script>
   </body>
 </html>
